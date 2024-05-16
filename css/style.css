@@ -1,6 +1,120 @@
-.container{
-    width: 50%;
-    margin: auto;
-    border: 5px solid #160755;
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.logoContainer{
+    display: flex;
+    flex: auto;
+    width: 25vw;
+    justify-content: center;
+    align-content: center;
+
+    background-image: url("../assets/img/art-deco-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logoContainer img{
+    flex: auto;
+    width: 70vw;
+    height: 20vh;
+    margin-top: 30vh;
+    padding: 20px 70px;
+
+    background-color: rgba(42, 42, 42, 0.9);
+    border-top: 4px rgb(255, 255, 255) solid;
+    border-bottom: 4px rgb(255, 255, 255) solid;
+}
+
+.formContainer{
+    font-size: 1.2em;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #383737;
+    border-left: 8px rgb(211, 191, 135) solid;
+}
+
+h3, h4{
+    margin: 20px 30px;
+}
+
+h4{
+    margin-bottom: 30px;
+}
+
+fieldset{
+    color: black;
+    flex: auto;
+    margin: 0;
+    background-color: whitesmoke;
+    border: none;
+}
+
+fieldset>h3{
+    margin-left: 20px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.formRow{
+    font-size: .7em;
+    display: flex;
+    margin: 30px;
+    gap: 150px;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font-size: 1.5em;
+    border-radius: 8px;
+}
+
+.createBtn{
+    background-color: rgb(211, 191, 135);
     border-radius: 10px;
+    font-size: 1em;
+    margin: 30px;
+    padding: 10px 15px;
+    font-weight: bolder;
+}
+
+p{
+    margin: 0 30px;
+}
+
+a, a:link{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(211, 191, 135);
+}
+
+#password:invalid, 
+#passwordConfm:invalid, 
+#first_name:invalid, 
+#last_name:invalid,
+#email:invalid{
+    border: 2px solid rgb(237, 31, 31);
+}
+
+#password:focus, 
+#passwordConfm:focus, 
+#first_name:focus, 
+#last_name:focus,
+#email:focus{
+    border: 2px solid rgb(31, 55, 237);
 }

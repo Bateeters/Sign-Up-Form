@@ -7,8 +7,52 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>New page, who dis?</h1>
+    <div class="logoContainer">
+        <img src="./assets/img/MLGA_Logo_Transparent.png" alt="Moonlit Graphic Art">
+    </div>
+    <div class="formContainer">
+        <h3>This is not a real online service!</h3>
+        <h3>Sign up now for our monthly newsletter to keep 
+            <br>up-to-date on all products and designs.</h3>
+        <h4><i>There's also discounts involved!</i></h4>
+        <form action="" method="post">
+            <fieldset>
+                <h3>You know what to do!</h3>
+                <div class="formRow">
+                    <div class="test">
+                        <label for="first_name">*First Name:</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="test">
+                        <label for="last_name">*Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="test">
+                        <label for="email">*Email:</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="test">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="1234567890">
+                    </div>
+                </div>
+                <div class="formRow">
+                    <div class="test">
+                        <label for="password">*Password:</label>
+                        <input type="password" name="password" id="password"required>
+                    </div>
+                    
+                    <div class="test">
+                        <label for="passwordConfm">*Confirm Password:</label>
+                        <input type="password" name="passwordConfm" id="passwordConfm" required>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="createBtn">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 </html>
